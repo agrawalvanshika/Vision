@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Identification</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .header .title {
+            font-size: 24px;
+        }
+        .header .title .icon {
+            color: blue;
+        }
+        .header .settings {
+            font-size: 24px;
+        }
+        .main {
+            margin-top: 50px;
+        }
+        .main .instruction {
+            font-size: 18px;
+            margin-bottom: 30px;
+            font-size:50px;
+            color: rgb(241, 241, 245);
+        }
+        .main .verify-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .footer .help {
+            text-align: left;
+        }
+        .footer .home {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">VISI<span class="icon">O</span>N</div>
+        <div class="settings">&#9881;</div>
+    </div>
+    <div class="main">
+        <div class="instruction">Say 'Vision Detect the face' to identify <br>the face in front of you.</div>
+        <div class="face-icon">&#128100;</div>
+        <button class="verify-button">Verify</button>
+    </div>
+    <div class="footer">
+        <div class="help">Help</div>
+        <div class="home">Return to Home</div>
+    </div>
+</body>
+</html>
