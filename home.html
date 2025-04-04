@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISION - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        header {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1e90ff;
+            margin-left: 40px; 
+        }
+        .login-container {
+            display: flex;
+            align-items: center;
+        }
+        .login-btn {
+            background-color: #1e90ff;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .mic-icon img {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+        .eye-animation {
+            width: 100%;
+            height: auto;
+        }
+        h1 {
+            font-size: 150px;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 20px;
+        }
+        .highlight {
+            color: #1e90ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">VISION</div>
+        <div class="login-container">
+            <img class="mic-icon" src="mic.png" alt="Mic Icon">
+            <button class="login-btn">Login</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>VISION</h1>
+        <p>Helping you see, With trust and care</p>
+        <p>Say <span class="highlight">"Hey Vision"</span> To get started</p>
+    </div>
+</body>
+</html>
