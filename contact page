@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .logo {
+            font-size: 45px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 10px;
+            padding-left: 50px;
+        }
+        .search-bar input {
+            width: 70%;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background-color: #333;
+            color: white;
+            padding-left: 20px;
+        }
+        .settings-icon {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .tab {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        .tab.active {
+            background-color: #007bff;
+            color: white;
+        }
+        .contact-list {
+            padding: 20px;
+        }
+        .contact-section {
+            margin-bottom: 20px;
+        }
+        .contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+        }
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #007bff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .contact-number {
+            font-size: 14px;
+            color: #aaa;
+        }
+        .contact-actions {
+            display: flex;
+            align-items: center;
+        }
+        .contact-actions img {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Vision</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Contacts...">
+        </div>
+        <img src="settings-icon.png" class="settings-icon">
+    </div>
+    <div class="tabs">
+        <div class="tab active">All</div>
+        <div class="tab">Missed call</div>
+        <div class="tab">Recent</div>
+        <div class="tab">Favorite</div>
+        <div class="tab">Emergency contacts</div>
+    </div>
+    <div class="contact-list">
+        <div class="contact-section">
+            <div class="contact">
+                <div class="contact-info">
+                    <div class="contact-icon">A</div>
+                    <div class="contact-details">
+                        <div class="contact-name">John Doe</div>
+                        <div class="contact-number">Mobile: 123-456-7890</div>
+                    </div>
+                </div>
+                <div class="contact-actions">
+                    <img src="phone-icon.png" alt="Call">
+                    <img src="message-icon.png" alt="Message">
+                    <img src="options-icon.png" alt="Options">
+                </div>
+            </div>
+            <!-- Repeat the above block for each contact -->
+        </div>
+    </div>
+</body>
+</html>
